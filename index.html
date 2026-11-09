@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050806" />
+    <title>Black da Obra | Avatar Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <span class="eyebrow">IRMÃOS SOARES • BLACK DA OBRA</span>
+        <h1>Crie seu avatar <em>Black da Obra</em> em segundos.</h1>
+        <p>
+          Garanta um novo avatar para o seu whatsapp. Envie sua foto, ajuste o
+          enquadramento e baixe um PNG profissional.
+        </p>
+      </header>
+
+      <section class="generator" aria-label="Gerador de avatar Black da Obra">
+        <div class="stage-column">
+          <div class="stage-frame">
+            <canvas id="avatar" width="1080" height="1080" aria-label="Prévia do avatar"></canvas>
+          </div>
+          <p class="stage-tip">Arraste a imagem para reposicionar e use o zoom para refinar o corte.</p>
+        </div>
+
+        <aside class="controls" aria-label="Controles do avatar">
+          <div class="card">
+            <span class="badge">Gerador</span>
+            <h2>Seu avatar</h2>
+
+            <div class="actions">
+              <label class="button upload-button" for="foto">
+                <span>📷 Escolher foto</span>
+              </label>
+              <input id="foto" type="file" accept="image/*" />
+
+              <button id="gerar" class="button primary-button" type="button" disabled>
+                Gerar novo avatar
+              </button>
+
+              <a id="baixar" class="button secondary-button hidden" href="#" download="avatar-black-da-obra.png">
+                ⬇ Baixar PNG 1080×1080
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <label class="slider-label" for="zoom">Zoom da foto</label>
+            <input id="zoom" type="range" min="0.8" max="2.6" value="1" step="0.01" />
+            <div class="zoom-meta">
+              <span>0.80x</span>
+              <strong id="zoomValue">1.00x</strong>
+              <span>2.60x</span>
+            </div>
+          </div>
+
+          <div class="card instructions">
+            <h3>Como funciona</h3>
+            <ol>
+              <li>Escolha uma imagem do seu dispositivo.</li>
+              <li>Arraste e ajuste o zoom para um enquadramento perfeito.</li>
+              <li>Clique em “Gerar novo avatar”.</li>
+              <li>Baixe o PNG final em alta resolução.</li>
+            </ol>
+          </div>
+
+          <div id="status" class="status" role="status" aria-live="polite">
+            Sua foto fica apenas no navegador e não é enviada para nenhum servidor.
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

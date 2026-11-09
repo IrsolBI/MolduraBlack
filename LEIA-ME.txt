@@ -1,0 +1,7 @@
+GERADOR DE AVATARES BLACK DA OBRA
+1. Abra esta pasta no VS Code (File > Open Folder).
+2. Instale a extensão Live Server.
+3. Clique com o botão direito em index.html > Open with Live Server.
+4. Envie uma foto, ajuste zoom e posição, clique Gerar novo avatar e Baixar.
+Para compartilhar com colaboradores, publique os quatro arquivos (index.html, style.css, script.js, moldura.png) em um serviço de hospedagem estática como Netlify ou GitHub Pages.
+O arquivo moldura.png é a moldura original enviada, com transparência central.
